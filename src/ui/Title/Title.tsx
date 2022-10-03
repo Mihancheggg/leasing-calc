@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Title.module.css'
 
 type TitlePropsType = {
   title: string
@@ -6,6 +7,6 @@ type TitlePropsType = {
 
 export const Title = (props: TitlePropsType) => {
   return (
-    <h1>{props.title}</h1>
+    <h1 className={styles.title}>{props.title}</h1>
   );
 };
